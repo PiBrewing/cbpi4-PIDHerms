@@ -2,7 +2,7 @@
 
 ### This Kettle Logic can be used to run a HERMS System with CraftbeerPi4. 
 
-## Mash teemperature is controlled via the HLT and ID logic.
+## Mash temperature is controlled via PID logic
 - The Kettle logic is intended to be used in a HERMS system with HLT. It is a PID logic. PID parameters can be for instance derived from the PID AutoTune plugin (https://github.com/avollkopf/cbpi4-PIDAutoTune)
 - It runs on PID control until it reaches a specified temperature. Above that temperature it heates w/o PID logic until a specified boil temp is reached.
 - Power to run boil can be specified in the plugin
