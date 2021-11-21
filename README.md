@@ -7,6 +7,7 @@
 - It runs on PID control until it reaches a specified temperature. Above that temperature it heates w/o PID logic until a specified boil temp is reached.
 - Power to run boil can be specified in the plugin
 - Kettle Agitator (Pump) is siwtched on in Automode
+- Pump can be switched of in intervalls
 
 ![CBPi4 Settings](https://github.com/avollkopf/cbpi4-PIDHerms/blob/main/Settings.png?raw=true)
 
@@ -18,9 +19,12 @@
 	- Max Output: Maximum Power (%) to be used for PID during Ramp up
 	- Max Boil Output: Maximum Power during when Boil Temp is reached
 	- Max Boil Temp: When Temp is reached,  power is set to Max Boil Output
-	- Internal Loop: Seconds of the internal loop -> Determines maximum PID resolution
+	- Max PID Temp: PID is not used above this temp and max output is used
+	- Rest Intervall: Intervall for pump activity in seconds
+	- Rest Time: Pump Rest Time in seconds
+	- SampleTime: 2 or 5 seconds. Determines PID recalcultation frequency
 	- HLT Sensor: Sensor that measures your HLT temperature
-	- DeltaTemp: Plugin allows control of HLT temp. This values determines the max delta temp that the HLT is allowed to be above the Target Mash Temp 
+	- DeltaTemp: Plugin allows control of HLT temp. This values determines the max delta temp that the HLT is allowed to be above the Target Mash Temp. Power will be set to 0 if delta temp is larger than max delta.
 
 ## Installation:
 - sudo pip3 install cbpi4-PIDHerms 
@@ -28,8 +32,9 @@
 - cbpi add cbpi4-PIDHerms 
 
 ## Requirements:
-- CBPi4 Version 4.0.0.35 or later (currently only available from my fork)
+- CBPi4 Version 4.0.0.45 or later (currently only available from my fork)
 
 Changelog:
 
-- 23.09.21: Initial commit
+- 21.11.21: (0.0.2) Plugin can now use actor power incl. PWM actors
+- 23.09.21: (0.0.1) Initial commit
