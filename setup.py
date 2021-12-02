@@ -7,11 +7,11 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='cbpi4-PIDHerms',
-      version='0.0.1',
-      description='CraftBeerPi Plugin',
-      author='',
-      author_email='',
-      url='',
+      version='0.0.2',
+      description='CraftBeerPi 4 Kettle Logic Plugin',
+      author='Alexander Vollkopf',
+      author_email='avollkopf@web.de',
+      url='https://github.com/avollkopf/cbpi4-PIDHerms',
       include_package_data=True,
       package_data={
         # If any package contains *.txt or *.rst files, include them:
@@ -19,7 +19,7 @@ setup(name='cbpi4-PIDHerms',
       'cbpi4-PIDHerms': ['*','*.txt', '*.rst', '*.yaml']},
       packages=['cbpi4-PIDHerms'],
 	        install_requires=[
-            'cbpi>=4.0.0.34',
+           'cbpi @ git+ssh://git@github.com/avollkopf/craftbeerpi4.git',
       ],
 	  long_description=long_description,
 	  long_description_content_type='text/markdown'
