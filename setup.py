@@ -19,7 +19,7 @@ setup(name='cbpi4-PIDHerms',
       'cbpi4-PIDHerms': ['*','*.txt', '*.rst', '*.yaml']},
       packages=['cbpi4-PIDHerms'],
 	        install_requires=[
-           'cbpi @ git+ssh://git@github.com/avollkopf/craftbeerpi4.git',
+           'cbpi',
       ],
 	  long_description=long_description,
 	  long_description_content_type='text/markdown'
