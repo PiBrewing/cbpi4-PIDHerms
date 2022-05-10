@@ -36,5 +36,6 @@
 
 Changelog:
 
+- 10.05.22: (0.0.3) Removed cbpi dependency
 - 21.11.21: (0.0.2) Plugin can now use actor power incl. PWM actors
 - 23.09.21: (0.0.1) Initial commit
