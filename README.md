@@ -29,7 +29,6 @@
 ## Installation:
 - sudo pip3 install cbpi4-PIDHerms 
 - (or from the GIT repo) -> sudo pip3 install https://github.com/avollkopf/cbpi4-PIDHerms/archive/main.zip
-- cbpi add cbpi4-PIDHerms 
 
 ## Requirements:
 - CBPi4 Version 4.0.0.45 or later (currently only available from my fork)
