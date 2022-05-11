@@ -29,13 +29,13 @@
 ## Installation:
 - sudo pip3 install cbpi4-PIDHerms 
 - (or from the GIT repo) -> sudo pip3 install https://github.com/avollkopf/cbpi4-PIDHerms/archive/main.zip
-- cbpi add cbpi4-PIDHerms 
 
 ## Requirements:
 - CBPi4 Version 4.0.0.45 or later (currently only available from my fork)
 
 Changelog:
 
+- 11.05.22: (0.0.4) Updated README (removed cbpi add)
 - 10.05.22: (0.0.3) Removed cbpi dependency
 - 21.11.21: (0.0.2) Plugin can now use actor power incl. PWM actors
 - 23.09.21: (0.0.1) Initial commit
